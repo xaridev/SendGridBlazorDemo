@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendGridBlazorDemo.Module", "SendGridBlazorDemo.Module\SendGridBlazorDemo.Module.csproj", "{36318BB2-A926-487C-B4F6-4CBEA2AB9303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendGridBlazorDemo.Blazor.Server", "SendGridBlazorDemo.Blazor.Server\SendGridBlazorDemo.Blazor.Server.csproj", "{084A8D7B-F0A0-4C24-977B-39C73A3B0D9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		EasyTest|Any CPU = EasyTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36318BB2-A926-487C-B4F6-4CBEA2AB9303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36318BB2-A926-487C-B4F6-4CBEA2AB9303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36318BB2-A926-487C-B4F6-4CBEA2AB9303}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{36318BB2-A926-487C-B4F6-4CBEA2AB9303}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{36318BB2-A926-487C-B4F6-4CBEA2AB9303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36318BB2-A926-487C-B4F6-4CBEA2AB9303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{084A8D7B-F0A0-4C24-977B-39C73A3B0D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084A8D7B-F0A0-4C24-977B-39C73A3B0D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084A8D7B-F0A0-4C24-977B-39C73A3B0D9D}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{084A8D7B-F0A0-4C24-977B-39C73A3B0D9D}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{084A8D7B-F0A0-4C24-977B-39C73A3B0D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084A8D7B-F0A0-4C24-977B-39C73A3B0D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

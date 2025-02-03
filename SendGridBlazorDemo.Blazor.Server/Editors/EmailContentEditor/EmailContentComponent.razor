@@ -1,0 +1,9 @@
+﻿
+<DxHtmlEditor Markup="@Content" MarkupChanged="ValueChanged" MediaResizeEnabled="true" Height="500px" />
+
+@code {
+    [Parameter]
+    public string Content { get; set; }
+    [Parameter]
+    public EventCallback<string> ValueChanged { get; set; }
+}

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="NextObject" ImageName="Action_Change_State" />
+    </Actions>
+  </ActionDesign>
+  <NavigationItems NavigationStyle="Accordion">
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="@2f6e8921-a148-480e-ada4-cf2b777820fb" ViewId="EmailModel_DetailView" IsNewNode="True" />
+          <Item Id="EmailModel_ListView" ImageName="BO_Document" ViewId="EmailModel_DetailView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options UIType="SingleWindowSDI" RestoreTabbedMdiLayout="True" ShowTabImage="True" />
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.2.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="EmailModel_DetailView" Caption="Send New Email">
+      <Items>
+        <PropertyEditor Id="Bcc" NullText="Bcc" />
+        <PropertyEditor Id="CC" NullText="Cc" />
+        <PropertyEditor Id="Content" PropertyEditorType="SendGridBlazorDemo.Blazor.Server.Editors.EmailContentEditor.EmailContentEditor" />
+        <ActionContainerViewItem Id="MyCategoryContainer" ActionContainer="MyCategory" Caption="MyCategoryContainer(10)" IsNewNode="True" />
+        <PropertyEditor Id="Subject" NullText="Subject" />
+        <PropertyEditor Id="To" NullText="To" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100" CustomCSSClassName="mt-3">
+            <LayoutGroup Id="EmailModel" RelativeSize="100" Direction="Vertical" ShowCaption="False" CustomCSSClassName="mt-3">
+              <LayoutGroup Id="EmailModel_col1" RelativeSize="100" CustomCSSClassName="mt-3">
+                <LayoutItem Id="To" RelativeSize="1.9382192610539066" CustomCSSClassName="mt-3" />
+                <LayoutItem Id="CC" RelativeSize="1.45366444579043" />
+                <LayoutItem Id="Bcc" RelativeSize="1.45366444579043" />
+                <LayoutItem Id="Subject" ViewItem="Subject" Index="3" RelativeSize="1.45366444579043" IsNewNode="True" />
+                <LayoutItem Id="Content" ShowCaption="False" ViewItem="Content" Index="4" RelativeSize="1.45366444579043" IsNewNode="True" />
+                <LayoutItem Id="MyCategoryContainer" ViewItem="MyCategoryContainer" Index="5" RelativeSize="92.24712295578438" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="EmailModel_col2" Caption="EmailModel_col2" RelativeSize="50" Removed="True">
+                <LayoutItem Id="Content" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="Subject" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
